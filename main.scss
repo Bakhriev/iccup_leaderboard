@@ -208,7 +208,7 @@ body {
   border-radius: 4px;
   background-color: var(--t-grid-gray);
 
-  transition: box-shadow 200ms ease-in-out;
+  transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
 
   &::before,
   &::after {
@@ -238,6 +238,11 @@ body {
     &:hover {
       box-shadow: 0px 4px 6px 0px #023827;
     }
+  }
+
+  &.mouse-enter {
+    background-color: var(--t-grid-blue);
+    box-shadow: none !important;
   }
 
   &__flag {

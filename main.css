@@ -186,7 +186,7 @@ body {
   color: var(--t-grid-black);
   border-radius: 4px;
   background-color: var(--t-grid-gray);
-  transition: box-shadow 200ms ease-in-out;
+  transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
 }
 .t-player::before, .t-player::after {
   content: "";
@@ -209,6 +209,10 @@ body {
 }
 .t-player.winner:focus-within, .t-player.winner:hover {
   box-shadow: 0px 4px 6px 0px #023827;
+}
+.t-player.mouse-enter {
+  background-color: var(--t-grid-blue);
+  box-shadow: none !important;
 }
 .t-player__flag {
   width: 24px;
